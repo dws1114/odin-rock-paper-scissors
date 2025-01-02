@@ -12,6 +12,10 @@ function getComputerChoice(num) {
     }
 }
 
-console.log(computerChoiceNum);
+function getHumanChoice() {
+    const humanChoice = prompt("What is your choice: Rock, Paper, or Scissors? ");
+    return humanChoice;
+}
 
-console.log(getComputerChoice(computerChoiceNum))
+const computerChoice = getComputerChoice(computerChoiceNum);
+const humanChoice = getHumanChoice().toLowerCase();
